@@ -11,7 +11,6 @@ function resetColor(id) {
 }
 
 
-let x=10;
-const x=10;
+
 
 console.log(x);
