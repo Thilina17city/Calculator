@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <title>Title</title>
+</head>
+<body class="m-2">
+
+<div class=" absolute left-[660px] top-[100px] w-[150px] ">
+    <h1 class="bg-blue-500 rounded text-amber-500 text-center ">Hellow</h1>
+</div>
+
+
+
+<div class=" rounded bg-red-400 mt-3 mr-1 w-[450px] top-[160px] h-[430px] absolute left-[500px] top-[160px] flex flex-col items-center
+justify-start">
+    <h1 class="mt-0 text-white font-bold ">Calculator</h1>
+
+    <input id="display" type="text" class="mt-2 border border-gray-300 p-2 rounded-md text-xl text-right w-50">
+
+    <!--        buttons-->
+
+
+    <div class="flex justify-center mt-7">
+        <button id="A" onmouseenter="changeColor('A')" onmouseleave="resetColor('A')" onclick="clearDisplay()" class="m-2 py-2 px-4 bg-white text-black rounded ">A</button>
+        <button class="m-2 py-2 px-4 bg-white text-black rounded">B</button>
+        <button class="m-2 py-2 px-4 bg-white text-black rounded">C</button>
+        <button id=" Divide" onmouseenter="changeColor(' Divide')" onmouseleave="resetColor(' Divide')" onclick="appendOperator('/')" class="m-2 py-2 px-4 bg-white text-black rounded w-[100px]">/</button>
+    </div>
+
+    <div class="flex justify-center mt-2">
+        <button id="Seven"  onmouseenter="changeColor('Seven')" onmouseleave="resetColor('Seven')" onclick="appendNumber('7')" class="m-2 py-2 px-4 bg-white text-black rounded">7</button>
+        <button id="Eight" onmouseenter="changeColor('Eight')" onmouseleave="resetColor('Eight')" onclick="appendNumber('8')" class="m-2 py-2 px-4 bg-white text-black rounded">8</button>
+        <button id="Nine" onmouseenter="changeColor('Nine')" onmouseleave="resetColor('Nine')" onclick="appendNumber('9')" class="m-2 py-2 px-4 bg-white text-black rounded">9</button>
+        <button id="Multi" onmouseenter="changeColor('Multi')" onmouseleave="resetColor('Multi')"  onclick="appendOperator('*')"  class="m-2 py-2 px-4 bg-white text-black rounded w-[100px]">*</button>
+    </div>
+    <div>
+        <div class="flex justify-center mt-2">
+            <button id="Four" onmouseenter="changeColor('Four')" onmouseleave="resetColor('Four')" onclick="appendNumber('4')" class="m-2 py-2 px-4 bg-white text-black rounded">4</button>
+            <button id="Five" onmouseenter="changeColor('Five')" onmouseleave="resetColor('Five')" onclick="appendNumber('5')" class="m-2 py-2 px-4 bg-white text-black rounded">5</button>
+            <button id="Six" onmouseenter="changeColor('Six')" onmouseleave="resetColor('Six')" onclick="appendNumber('6')" class="m-2 py-2 px-4 bg-white text-black rounded">6</button>
+            <button id="Sub" onmouseenter="changeColor('Sub')" onmouseleave="resetColor('Sub')" onclick="appendOperator('-')" class="m-2 py-2 px-4 bg-white text-black rounded w-[100px]">-</button>
+        </div>
+
+        <div class="flex justify-center mt-2">
+            <button id="one" onmouseenter="changeColor('one')" onmouseleave="resetColor('one')" onclick="appendNumber('1')" class="m-2 py-2 px-4 bg-white text-black rounded">1</button>
+            <button id="Two" onmouseenter="changeColor('Two')" onmouseleave="resetColor('Two')" onclick="appendNumber('2')" class="m-2 py-2 px-4 bg-white text-black rounded">2</button>
+            <button id="Three" onmouseenter="changeColor('Three')" onmouseleave="resetColor('Three')" onclick="appendNumber('3')" class="m-2 py-2 px-4 bg-white text-black rounded">3</button>
+            <button id="Sum" onmouseenter="changeColor('Sum')" onmouseleave="resetColor('Sum')"  onclick="appendOperator('+')"  class="m-2 py-2 px-4 bg-white text-black rounded  w-[100px]">+</button>
+        </div>
+
+        <div class="flex justify-center mt-2">
+            <button class="m-2 py-2 px-4 bg-white text-black rounded">x</button>
+            <button id="Zero" onmouseenter="changeColor('Zero')" onmouseleave="resetColor('Zero')"  onclick="appendOperator('+')" onclick="appendNumber('0')" class="m-2 py-2 px-4 bg-white text-black rounded">0</button>
+            <button class="m-2 py-2 px-4 bg-white text-black rounded">y</button>
+            <button onclick= "calculateResult()" class="m-2 py-2 px-4 bg-white text-black rounded w-[100px]">=</button>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+</body>
+
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</html>
